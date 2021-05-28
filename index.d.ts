@@ -1,4 +1,6 @@
-type Task<T> = Promise<T>;
-
-global.Task = Task;
-window.Task = Task;
+declare namespace Global {
+    type Task<T> = Promise<T>;
+}
+declare namespace Window {
+    type Task<T> = Promise<T>;
+}
